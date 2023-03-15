@@ -1,0 +1,45 @@
+git --version
+
+git config --global user.name "<user_name>"
+git config --global user.mail "<user_mail>"
+
+git config --list
+
+*create directory from terminal
+
+version >= 2.28
+git init --initial-branch = main
+git init -b main
+
+version < 2.28
+git init
+git checkout -b main
+
+
+git status
+ls -a
+
+git --help
+
+Basic Commands:
+git status
+git add
+git commit
+git log
+git help
+
+
+
+---------
+
+0.- validate git version and install VSCode
+https://linuxhint.com/install-visual-studio-code-ubuntu22-04/
+
+
+1.- login to github.com
+1.1.- new repository
+1.1.1- add name, md file, license, create repository
+2.- create a file on computer  
+3.- from terminal open the path and type git init
+
+
