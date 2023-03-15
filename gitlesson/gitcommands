@@ -1,0 +1,57 @@
+git --version
+
+git config --global user.name "<user_name>"
+git config --global user.mail "<user_mail>"
+
+git config --list
+
+*create directory from terminal
+
+version >= 2.28
+git init --initial-branch = main
+git init -b main
+
+version < 2.28
+git init
+git checkout -b main
+
+
+git status
+ls -a
+
+git --help
+
+Basic Commands:
+git status
+git add
+git commit
+git log
+git help
+
+
+
+---------
+
+0.- validate git version and install VSCode
+https://linuxhint.com/install-visual-studio-code-ubuntu22-04/
+
+0.1.- 
+git config --global user.name "<user_name>"
+git config --global user.mail "<user_mail>"
+
+1.- login to github.com
+1.1.- new repository
+1.1.1- add name, md file, license, create repository
+2.- create a file on computer  
+3.- from terminal open the path and type: git init
+3.1.- add all files: git add .
+3.2.- create first commit: git commit -m "first commit"
+3.3.- change branch name: git branch -M main
+3.4.- connect to github repo: git remote add origin https://github.com/ing-a-zepeda/mesdatosms2023.git
+3.5.- send from origin to github: git push origin main 
+3.5.1.- create ssh key, open terminal and write: ssh-keygen -t ed25519 -C email@email.com  https://www.youtube.com/watch?v=8X4u9sca3Io&ab_channel=VictorGeislinger
+3.5.2.- copy result to github
+3.5.3.- type: ssh -T git@github.com then Yes
+3.5.4.- now use ssh line:  git remote add origin git@github.com:ing-a-zepeda/mesdatosms2023.git
+
+
