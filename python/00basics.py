@@ -141,3 +141,102 @@ x >>= 5 # x = x >> 5
 
 #
 x <<= 5 # x = x << 5
+
+
+
+
+
+# Data structure
+'''
+List ordered, mutable, allow duplicated values
+Tuple ordered, not mutable, allow duplicted values
+Set not ordered, mutable, does not allow duplicated values
+Dictorionary not ordered, mutable, does not allow duplicated values
+'''
+
+#List, to get the position or slice you can use numbers, language[1], language[-1], language[0:2]
+language = ["python","java", "golang"]
+print(language)
+
+# A list can container another list
+language2 = [['python', 'java', 'golang'],'practice', 'dedication']
+print(language2[0][0])
+
+# Update values
+language[2] = 'Dart'
+print(language)
+
+# Add values to list at the end
+language.append('golang')
+print(language)
+
+# To join 2 lists
+otherlanguage = ["C", "C++"]
+language.extend(otherlanguage)
+print(language)
+
+
+#Tuples, once defined it cannot be changed
+languages  = ("Python", "C", "C++")
+print(languages[0])
+print(languages[2])
+
+
+#Dictionary, couple of data replacement of hashmap or json
+dictlanguage = {
+    "name": "Python",
+    "creator": "Guido"
+}
+
+print(dictlanguage["creator"])
+
+#To add new couple of data, key and description, this can be a list
+dictlanguage["year"] = 1999
+dictlanguage["features"] = ['Easy','simple','cool']
+print(dictlanguage)
+
+#To update data
+dictlanguage["year"] = 1991
+print(dictlanguage)
+
+#To recover information it can be used items, keys and values
+#items returns tuples
+print(dictlanguage.items())
+#keys a list with the keys
+print(dictlanguage.keys())
+#values a list with the values
+print(dictlanguage.values())
+
+
+
+
+# Sets contains unique elements
+setexample = {1,2,3,4}
+setexample2 = {1,1,2.1,"text"}
+print(setexample2)
+
+#Add elements to Set
+setexample2.add(4)
+print(setexample2)
+
+setexample2.update([5,6,7,7])
+print(setexample2)
+
+#Delete elements
+setexample2.discard(7)
+print(setexample2)
+
+setexample2.remove(6) #If element doesn't exist it will thorw a error
+print(setexample2)
+#Delete all elements
+setexample2.clear()
+print(setexample2)
+
+
+
+
+#Conditionals
+
+
+
+#Cycles
